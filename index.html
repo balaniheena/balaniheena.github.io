@@ -124,13 +124,21 @@
         <div class="container">
         
         			<a href="#" class="logo"><img src="images/logo.png" alt="" /></a>
-                  
+                   
+        
         </div>
         </div>
         
         
+
+
+		<div class="wrapper">
         
-        <div class="subscribe_section" id="subscribe_part">
+        
+        
+        
+        
+        <div class="common_section" id="contact_part">
         <div class="container">
         
         			<h2>Login</h2>
@@ -139,19 +147,11 @@
                    	<br clear="all" />
                     
                     
-                    <form method="post" action="secondpage.html">
-                    <input type="email" placeholder="Enter your e-Mail" required="true" />
-                    <input type="text" placeholder="Password"  required="true" />
+                    <form method="post" class="hpform">
+                    <input type="email" placeholder="Email" />
+                    <input type="text" placeholder="password" />
 
-                    <input type="submit" value="SUBSCRIBE" onclick="secondpage.html" />
-                    </form>
-
-
-                    <form method="post" action="register.html">
-                    <input type="email" placeholder="Enter your e-Mail" required="true" />
-                    <input type="text" placeholder="Password"  required="true" />
-
-                    <input type="submit" value="SUBSCRIBE" onclick="secondpage.html" />
+                    <input type="submit" value="SEND" />
                     </form>
                     
                    
@@ -163,99 +163,15 @@
         
         
         
-        <div class="common_section">
-        <div class="container">
         
-        	
-            		<a href="#" class="footer_logo"><img src="images/logo.png" alt="" /></a>
-                   
-					<div class="copyright">Copyright 2016 All Right Reserved - <a href="http://www.pfind.com/goodies/landiya/">Landiya</a> Theme By <a href="http://www.pfind.com/goodies/">pFind.com Goodies</a>.</div>                    
         
-        </div>
-        </div>
+        
+        
+        
         
         
         </div><!--wrapper-->
 
-
-		<script>
-            jQuery("#layerslider").layerSlider({
-                responsive: false,
-                responsiveUnder: 1100,
-                layersContainer: 1100,
-                skin: 'fullwidth',
-                hoverPrevNext: false,
-                skinsPath: 'layerslider/skins/'
-            });
-        
-        
-        </script>
-
-		<script src="js/wow.js"></script>
-        <script>
-        wow = new WOW(
-          {
-            animateClass: 'animated',
-            offset:       100
-          }
-        );
-        wow.init();
-        document.getElementById('moar').onclick = function() {
-          var section = document.createElement('section');
-          section.className = 'section--purple wow fadeInDown';
-          this.parentNode.insertBefore(section, this);
-        };
-        </script>
-
-		<script type="text/javascript">
-		$(function() {
-		$('a[href*=#]:not([href=#])').click(function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		var target = $(this.hash);
-		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		if (target.length) {
-		$('html,body').animate({
-		scrollTop: target.offset().top - 132
-		}, 2000);
-		return false;
-		}
-		}
-		});
-		});
-        </script>
-        
-        
-		<script type="text/javascript">
-        
-        
-        $(document).ready(function() {
-        
-        if($(window).width() <= 1200){
-        
-        
-        $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-        $('html,body').animate({
-        scrollTop: target.offset().top - 132
-        }, 2000);
-        return false;
-        }
-        }
-        });
-        });
-        
-        
-        
-        }
-        
-        });
-        
-        
-        </script> 
              
 
 		
