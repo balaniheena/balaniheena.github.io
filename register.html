@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="css/libs/animate.css">
 
 
-		<!-- bxSlider CSS file -->
+        <!-- bxSlider CSS file -->
         <link href="css/jquery.bxslider.css" rel="stylesheet" />
 
 
@@ -32,30 +32,30 @@
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         
 
-		<!-- bxSlider Javascript file -->
+        <!-- bxSlider Javascript file -->
         <script src="js/jquery.bxslider.js"></script>
         <script>
-		$(document).ready(function(){
-		$('.bxslider').bxSlider({
-								
-								pager: false,
-								controls: true,
-								auto: true
-								
-								
-								});
-		});
-		</script>
+        $(document).ready(function(){
+        $('.bxslider').bxSlider({
+                                
+                                pager: false,
+                                controls: true,
+                                auto: true
+                                
+                                
+                                });
+        });
+        </script>
 
 
 
-		<link rel="stylesheet" type="text/css" href="lightbox/jquery.fancybox.css" media="screen" />
-		<script src="lightbox/jquery.fancybox.js"></script>
+        <link rel="stylesheet" type="text/css" href="lightbox/jquery.fancybox.css" media="screen" />
+        <script src="lightbox/jquery.fancybox.js"></script>
         <script type="text/javascript">
                 $(document).ready(function() {
                                            
                     $('.fancybox').fancybox();
- 		
+        
                 });
         </script>
 
@@ -65,7 +65,7 @@
         $(function() {
             $(window).scroll(function() {
                 if($(this).scrollTop() != 0) {
-                    $('#gotop').fadeIn();	
+                    $('#gotop').fadeIn();   
                 } else {
                     $('#gotop').fadeOut();
                 }
@@ -73,45 +73,45 @@
          
             $('#gotop').click(function() {
                 $('body,html').animate({scrollTop:0},800);
-            });	
+            }); 
         });
         </script>
             
 
 
-		<!-- HEADER JQUERY -->
+        <!-- HEADER JQUERY -->
         <script type="text/javascript">
         $(function() {
             $(window).scroll(function() {
                 if($(this).scrollTop() >= 200) {
-                    $('.header').addClass("header_fix");	
+                    $('.header').addClass("header_fix");    
                 } else {
                    $('.header').removeClass("header_fix");
                 }
-            });	
+            }); 
         });
         </script>
         
         
         <script type="text/javascript">
         
-		if($(window).width() <= 900){
-		$(document).ready(function() {
+        if($(window).width() <= 900){
+        $(document).ready(function() {
                                     
-									
-									
+                                    
+                                    
                     $('.mobile .title').click(function() {
-												
-												$(this).next("ul").slideToggle();
-												$(this).toggleClass("minus");
-												
-												});
-					
-					
- 		
+                                                
+                                                $(this).next("ul").slideToggle();
+                                                $(this).toggleClass("minus");
+                                                
+                                                });
+                    
+                    
+        
                 });
-		
-		}
+        
+        }
         </script>
                             
 </head>
@@ -123,38 +123,41 @@
         <div class="header">
         <div class="container">
         
-        			<a href="#" class="logo"><img src="images/logo.png" alt="" /></a>
-                  <div class="nav mobile">
+                    <a href="#" class="logo"><img src="images/logo.png" alt="" /></a>
+                    
+                    <div class="nav mobile">
                     <div class="title">Menu <span class="fa "></span></div>
                     <ul>
                     
-                    <li><a href="index.html">Login</a></li>
+                    <li><a href="index.html">Log in</a></li>
                     </ul>
                     </div>
+        
         </div>
         </div>
         
         
+
+
+        <div class="wrapper">
         
-        <div class="subscribe_section" id="subscribe_part">
+        
+        
+        
+        
+        <div class="common_section" id="contact_part">
         <div class="container">
         
-        			<h2>Register</h2>
+                    <h2>Register</h2>
                     
                    
-                   	<br clear="all" />
+                    <br clear="all" />
                     
                     
-                    <form method="post" action="secondpage.html">
-                    <input type="text" placeholder="Name" required="true" />
-                    <input type="text" placeholder="Address"  required="true" />
-                    <input type="text" placeholder="District"  required="true" />
-                    <input type="text" placeholder="Work Preference "  required="true" />
-                    <input type="text" placeholder="Adhaar Number"  required="true" />
-                    <input type="text" placeholder="No of family members"  required="true" />
-
-
-                    <input type="submit" value="SUBSCRIBE" onclick="secondpage.html" />
+                    <form method="post" class="hpform">
+                    <input type="text" placeholder="Username" />
+                    <input type="text" placeholder="Password" />
+                    <input type="submit" value="SEND" />
                     </form>
                     
                    
@@ -166,22 +169,17 @@
         
         
         
-        <div class="common_section">
-        <div class="container">
         
-        	
-            		<a href="#" class="footer_logo"><img src="images/logo.png" alt="" /></a>
-                   
-					<div class="copyright">Copyright 2016 All Right Reserved - <a href="http://www.pfind.com/goodies/landiya/">Landiya</a> Theme By <a href="http://www.pfind.com/goodies/">pFind.com Goodies</a>.</div>                    
         
-        </div>
-        </div>
+        
+        
+        
         
         
         </div><!--wrapper-->
 
 
-		<script>
+        <script>
             jQuery("#layerslider").layerSlider({
                 responsive: false,
                 responsiveUnder: 1100,
@@ -194,7 +192,7 @@
         
         </script>
 
-		<script src="js/wow.js"></script>
+        <script src="js/wow.js"></script>
         <script>
         wow = new WOW(
           {
@@ -210,25 +208,25 @@
         };
         </script>
 
-		<script type="text/javascript">
-		$(function() {
-		$('a[href*=#]:not([href=#])').click(function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		var target = $(this.hash);
-		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		if (target.length) {
-		$('html,body').animate({
-		scrollTop: target.offset().top - 132
-		}, 2000);
-		return false;
-		}
-		}
-		});
-		});
+        <script type="text/javascript">
+        $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+        $('html,body').animate({
+        scrollTop: target.offset().top - 132
+        }, 2000);
+        return false;
+        }
+        }
+        });
+        });
         </script>
         
         
-		<script type="text/javascript">
+        <script type="text/javascript">
         
         
         $(document).ready(function() {
@@ -261,6 +259,6 @@
         </script> 
              
 
-		
+        
 </body>
 </html>
