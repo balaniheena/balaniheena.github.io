@@ -33,86 +33,7 @@
         
 
         <!-- bxSlider Javascript file -->
-        <script src="js/jquery.bxslider.js"></script>
-        <script>
-        $(document).ready(function(){
-        $('.bxslider').bxSlider({
-                                
-                                pager: false,
-                                controls: true,
-                                auto: true
-                                
-                                
-                                });
-        });
-        </script>
-
-
-
-        <link rel="stylesheet" type="text/css" href="lightbox/jquery.fancybox.css" media="screen" />
-        <script src="lightbox/jquery.fancybox.js"></script>
-        <script type="text/javascript">
-                $(document).ready(function() {
-                                           
-                    $('.fancybox').fancybox();
-        
-                });
-        </script>
-
-
-        <!-- GOTO TOP JQUERY -->
-        <script type="text/javascript">
-        $(function() {
-            $(window).scroll(function() {
-                if($(this).scrollTop() != 0) {
-                    $('#gotop').fadeIn();   
-                } else {
-                    $('#gotop').fadeOut();
-                }
-            });
-         
-            $('#gotop').click(function() {
-                $('body,html').animate({scrollTop:0},800);
-            }); 
-        });
-        </script>
-            
-
-
-        <!-- HEADER JQUERY -->
-        <script type="text/javascript">
-        $(function() {
-            $(window).scroll(function() {
-                if($(this).scrollTop() >= 200) {
-                    $('.header').addClass("header_fix");    
-                } else {
-                   $('.header').removeClass("header_fix");
-                }
-            }); 
-        });
-        </script>
-        
-        
-        <script type="text/javascript">
-        
-        if($(window).width() <= 900){
-        $(document).ready(function() {
-                                    
-                                    
-                                    
-                    $('.mobile .title').click(function() {
-                                                
-                                                $(this).next("ul").slideToggle();
-                                                $(this).toggleClass("minus");
-                                                
-                                                });
-                    
-                    
-        
-                });
-        
-        }
-        </script>
+       
                             
 </head>
 
@@ -155,8 +76,13 @@
                     
                     
                     <form method="post" class="hpform">
-                    <input type="text" placeholder="Username" />
+                    <input type="text" placeholder="Name" />
                     <input type="text" placeholder="Password" />
+                    <input type="text" placeholder="Address" />
+                    <input type="text" placeholder="District" />
+                    <input type="text" placeholder="Adhaar number" />
+                    <input type="text" placeholder="Number of family members" />
+
                     <input type="submit" value="SEND" />
                     </form>
                     
